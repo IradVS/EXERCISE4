@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-17T23:57:31 CST" name="Default suite" finished-at="2022-03-17T23:57:51 CST" duration-ms="19964">
+    <groups>
+    </groups>
+    <test started-at="2022-03-17T23:57:31 CST" name="Default test" finished-at="2022-03-17T23:57:51 CST" duration-ms="19964">
+      <class name="exercise4.Exercise4">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@5ba3f27a]" started-at="2022-03-17T23:57:31 CST" name="startUp" finished-at="2022-03-17T23:57:39 CST" duration-ms="7975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@5ba3f27a]" started-at="2022-03-17T23:57:39 CST" name="tc_REQ001_001" finished-at="2022-03-17T23:57:46 CST" duration-ms="6779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_REQ001_001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@5ba3f27a]" started-at="2022-03-17T23:57:46 CST" name="tearDown" finished-at="2022-03-17T23:57:51 CST" duration-ms="5164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- exercise4.Exercise4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
