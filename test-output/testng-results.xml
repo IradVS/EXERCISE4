@@ -1,333 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="30" passed="7" failed="3" skipped="0">
+<testng-results ignored="20" total="30" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T01:40:51 CST" name="e-commerce suite" finished-at="2022-03-18T01:45:31 CST" duration-ms="279529">
+  <suite started-at="2022-03-18T04:55:13 CST" name="e-commerce suite" finished-at="2022-03-18T04:59:27 CST" duration-ms="253675">
     <groups>
       <group name="Shop">
-        <method signature="Exercise4.tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@74751b3]" name="tc_REQ001_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@74751b3]" name="tc_REQ003_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@74751b3]" name="tc_REQ005_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ001_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ003_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ005_001" class="exercise4.Exercise4"/>
       </group> <!-- Shop -->
       <group name="Contact">
-        <method signature="Exercise4.tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@e350b40]" name="tc_REQ007_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@e350b40]" name="tc_REQ007_002" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@e350b40]" name="tc_REQ007_003" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_002" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_003" class="exercise4.Exercise4"/>
       </group> <!-- Contact -->
       <group name="Cart">
-        <method signature="Exercise4.tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" name="tc_REQ008_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" name="tc_REQ009_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" name="tc_REQ010_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" name="tc_REQ011_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ008_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ009_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ010_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ011_001" class="exercise4.Exercise4"/>
       </group> <!-- Cart -->
     </groups>
-    <test started-at="2022-03-18T01:40:51 CST" name="Shop page requirements" finished-at="2022-03-18T01:42:00 CST" duration-ms="68626">
+    <test started-at="2022-03-18T04:55:13 CST" name="Shop page requirements" finished-at="2022-03-18T04:56:29 CST" duration-ms="75545">
       <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:40:51 CST" name="startUp" finished-at="2022-03-18T01:41:05 CST" duration-ms="13870" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:13 CST" name="startUp" finished-at="2022-03-18T04:55:23 CST" duration-ms="9607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:05 CST" name="tc_REQ001_001" finished-at="2022-03-18T01:41:12 CST" duration-ms="6489" status="PASS">
+        <test-method signature="tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:23 CST" name="tc_REQ001_001" finished-at="2022-03-18T04:55:30 CST" duration-ms="7058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ001_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:12 CST" name="tearDown" finished-at="2022-03-18T01:41:17 CST" duration-ms="5119" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:30 CST" name="tearDown" finished-at="2022-03-18T04:55:35 CST" duration-ms="5386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ001_001 status=SUCCESS method=Exercise4.tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:17 CST" name="startUp" finished-at="2022-03-18T01:41:19 CST" duration-ms="1816" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:35 CST" name="startUp" finished-at="2022-03-18T04:55:42 CST" duration-ms="6996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:19 CST" name="tc_REQ003_001" finished-at="2022-03-18T01:41:22 CST" duration-ms="3852" status="PASS">
+        <test-method signature="tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:42 CST" name="tc_REQ003_001" finished-at="2022-03-18T04:55:47 CST" duration-ms="4793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ003_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:22 CST" name="tearDown" finished-at="2022-03-18T01:41:28 CST" duration-ms="5164" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:47 CST" name="tearDown" finished-at="2022-03-18T04:55:52 CST" duration-ms="5203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ003_001 status=SUCCESS method=Exercise4.tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:28 CST" name="startUp" finished-at="2022-03-18T01:41:30 CST" duration-ms="1924" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:52 CST" name="startUp" finished-at="2022-03-18T04:55:59 CST" duration-ms="7121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:30 CST" name="tc_REQ005_001" finished-at="2022-03-18T01:41:55 CST" duration-ms="25182" status="PASS">
+        <test-method signature="tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:59 CST" name="tc_REQ005_001" finished-at="2022-03-18T04:56:23 CST" duration-ms="24113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ005_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@74751b3]" started-at="2022-03-18T01:41:55 CST" name="tearDown" finished-at="2022-03-18T01:42:00 CST" duration-ms="5162" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:56:23 CST" name="tearDown" finished-at="2022-03-18T04:56:29 CST" duration-ms="5202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ005_001 status=SUCCESS method=Exercise4.tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- exercise4.Exercise4 -->
     </test> <!-- Shop page requirements -->
-    <test started-at="2022-03-18T01:42:05 CST" name="Cart page requirements" finished-at="2022-03-18T01:44:33 CST" duration-ms="147697">
+    <test started-at="2022-03-18T04:56:34 CST" name="Cart page requirements" finished-at="2022-03-18T04:58:25 CST" duration-ms="111038">
       <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:42:05 CST" name="startUp" finished-at="2022-03-18T01:42:07 CST" duration-ms="2204" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:34 CST" name="startUp" finished-at="2022-03-18T04:56:36 CST" duration-ms="2050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:42:07 CST" name="tc_REQ008_001" finished-at="2022-03-18T01:42:36 CST" duration-ms="28801" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a"}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-de-Jose.local', ip: '2806:10a6:10:1121:3858:c543:f834:4424%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b1e17f68896633d02cfd85b782089af, findElement {using=xpath, value=//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55755/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b1e17f68896633d02cfd85b782089af]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a"}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-de-Jose.local', ip: '2806:10a6:10:1121:3858:c543:f834:4424%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b1e17f68896633d02cfd85b782089af, findElement {using=xpath, value=//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55755/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b1e17f68896633d02cfd85b782089af
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at exercise4.Exercise4.tc_REQ008_001(Exercise4.java:342)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:36 CST" name="tc_REQ008_001" finished-at="2022-03-18T04:56:46 CST" duration-ms="9982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ008_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:42:36 CST" name="tearDown" finished-at="2022-03-18T01:42:41 CST" duration-ms="5111" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:46 CST" name="tearDown" finished-at="2022-03-18T04:56:51 CST" duration-ms="5189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ008_001 status=SUCCESS method=Exercise4.tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:42:41 CST" name="startUp" finished-at="2022-03-18T01:42:43 CST" duration-ms="1939" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:51 CST" name="startUp" finished-at="2022-03-18T04:56:58 CST" duration-ms="7010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:42:43 CST" name="tc_REQ009_001" finished-at="2022-03-18T01:43:06 CST" duration-ms="23247" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at exercise4.Exercise4.tc_REQ009_001(Exercise4.java:314)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:58 CST" name="tc_REQ009_001" finished-at="2022-03-18T04:57:10 CST" duration-ms="12351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ009_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:06 CST" name="tearDown" finished-at="2022-03-18T01:43:11 CST" duration-ms="5111" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:10 CST" name="tearDown" finished-at="2022-03-18T04:57:15 CST" duration-ms="5189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ009_001 status=SUCCESS method=Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:11 CST" name="startUp" finished-at="2022-03-18T01:43:13 CST" duration-ms="1927" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:15 CST" name="startUp" finished-at="2022-03-18T04:57:22 CST" duration-ms="6922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:13 CST" name="tc_REQ010_001" finished-at="2022-03-18T01:43:42 CST" duration-ms="28918" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-7']/div/div[2]/div[1]/div"}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-de-Jose.local', ip: '2806:10a6:10:1121:3858:c543:f834:4424%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7560dd4d7517774fe4933b56ca2647df, findElement {using=xpath, value=//*[@id='post-7']/div/div[2]/div[1]/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55976/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7560dd4d7517774fe4933b56ca2647df]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-7']/div/div[2]/div[1]/div"}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-de-Jose.local', ip: '2806:10a6:10:1121:3858:c543:f834:4424%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7560dd4d7517774fe4933b56ca2647df, findElement {using=xpath, value=//*[@id='post-7']/div/div[2]/div[1]/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55976/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7560dd4d7517774fe4933b56ca2647df
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at exercise4.Exercise4.tc_REQ010_001(Exercise4.java:177)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:22 CST" name="tc_REQ010_001" finished-at="2022-03-18T04:57:36 CST" duration-ms="13603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ010_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:42 CST" name="tearDown" finished-at="2022-03-18T01:43:47 CST" duration-ms="5163" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:36 CST" name="tearDown" finished-at="2022-03-18T04:57:41 CST" duration-ms="5198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ010_001 status=SUCCESS method=Exercise4.tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:47 CST" name="startUp" finished-at="2022-03-18T01:43:49 CST" duration-ms="2001" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:41 CST" name="startUp" finished-at="2022-03-18T04:57:48 CST" duration-ms="6998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:43:49 CST" name="tc_REQ011_001" finished-at="2022-03-18T01:44:27 CST" duration-ms="38085" status="PASS">
+        <test-method signature="tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:48 CST" name="tc_REQ011_001" finished-at="2022-03-18T04:58:20 CST" duration-ms="31351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ011_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@1e0b4072]" started-at="2022-03-18T01:44:27 CST" name="tearDown" finished-at="2022-03-18T01:44:33 CST" duration-ms="5165" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:58:20 CST" name="tearDown" finished-at="2022-03-18T04:58:25 CST" duration-ms="5189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ011_001 status=SUCCESS method=Exercise4.tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- exercise4.Exercise4 -->
     </test> <!-- Cart page requirements -->
-    <test started-at="2022-03-18T01:44:38 CST" name="Contact page requirements" finished-at="2022-03-18T01:45:31 CST" duration-ms="53103">
+    <test started-at="2022-03-18T04:58:30 CST" name="Contact page requirements" finished-at="2022-03-18T04:59:27 CST" duration-ms="57032">
       <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:44:38 CST" name="startUp" finished-at="2022-03-18T01:44:40 CST" duration-ms="2124" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:30 CST" name="startUp" finished-at="2022-03-18T04:58:32 CST" duration-ms="1905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:44:40 CST" name="tc_REQ007_001" finished-at="2022-03-18T01:44:52 CST" duration-ms="12309" status="PASS">
+        <test-method signature="tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:32 CST" name="tc_REQ007_001" finished-at="2022-03-18T04:58:41 CST" duration-ms="9027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ007_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:44:52 CST" name="tearDown" finished-at="2022-03-18T01:44:57 CST" duration-ms="5187" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:41 CST" name="tearDown" finished-at="2022-03-18T04:58:46 CST" duration-ms="5206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ007_001 status=SUCCESS method=Exercise4.tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:44:57 CST" name="startUp" finished-at="2022-03-18T01:44:59 CST" duration-ms="1881" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:46 CST" name="startUp" finished-at="2022-03-18T04:58:53 CST" duration-ms="6963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:44:59 CST" name="tc_REQ007_002" finished-at="2022-03-18T01:45:07 CST" duration-ms="7635" status="PASS">
+        <test-method signature="tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:53 CST" name="tc_REQ007_002" finished-at="2022-03-18T04:58:59 CST" duration-ms="6541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ007_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:45:07 CST" name="tearDown" finished-at="2022-03-18T01:45:12 CST" duration-ms="5126" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:59 CST" name="tearDown" finished-at="2022-03-18T04:59:05 CST" duration-ms="5201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ007_002 status=SUCCESS method=Exercise4.tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:45:12 CST" name="startUp" finished-at="2022-03-18T01:45:14 CST" duration-ms="1834" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:05 CST" name="startUp" finished-at="2022-03-18T04:59:11 CST" duration-ms="6729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:45:14 CST" name="tc_REQ007_003" finished-at="2022-03-18T01:45:26 CST" duration-ms="11839" status="PASS">
+        <test-method signature="tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:11 CST" name="tc_REQ007_003" finished-at="2022-03-18T04:59:22 CST" duration-ms="10249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ007_003 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:exercise4.Exercise4@e350b40]" started-at="2022-03-18T01:45:26 CST" name="tearDown" finished-at="2022-03-18T01:45:31 CST" duration-ms="5163" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:22 CST" name="tearDown" finished-at="2022-03-18T04:59:27 CST" duration-ms="5207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_REQ007_003 status=SUCCESS method=Exercise4.tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

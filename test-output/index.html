@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-e_commerce_suite" class="navigator-link">
-              <span class="suite-name border-failed">e-commerce suite</span>
+              <span class="suite-name border-passed">e-commerce suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,31 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-e_commerce_suite" class="hide-methods failed suite-e_commerce_suite"> (hide)</a> <!-- hide-methods failed suite-e_commerce_suite -->
-                      <a href="#" panel-name="suite-e_commerce_suite" class="show-methods failed suite-e_commerce_suite"> (show)</a> <!-- show-methods failed suite-e_commerce_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-e_commerce_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ008_001">tc_REQ008_001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ009_001">tc_REQ009_001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ010_001">tc_REQ010_001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-e_commerce_suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -158,6 +134,21 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ008_001">tc_REQ008_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ009_001">tc_REQ009_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ010_001">tc_REQ010_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-e_commerce_suite" title="exercise4.Exercise4" class="method navigator-link" hash-for-method="tc_REQ011_001">tc_REQ011_001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -173,88 +164,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-e_commerce_suite" class="panel e_commerce_suite">
-          <div class="suite-e_commerce_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">exercise4.Exercise4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_REQ008_001">
-                  </a> <!-- tc_REQ008_001 -->
-                  <span class="method-name">tc_REQ008_001</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;post-7&apos;]/div/div[2]/form/table/tbody/tr[1]/td[3]/a&quot;}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;MacBook-Pro-de-Jose.local&apos;, ip: &apos;2806:10a6:10:1121:3858:c543:f834:4424%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b1e17f68896633d02cfd85b782089af, findElement {using=xpath, value=//*[@id=&apos;post-7&apos;]/div/div[2]/form/table/tbody/tr[1]/td[3]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55755/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b1e17f68896633d02cfd85b782089af
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at exercise4.Exercise4.tc_REQ008_001(Exercise4.java:342)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_REQ009_001">
-                  </a> <!-- tc_REQ009_001 -->
-                  <span class="method-name">tc_REQ009_001</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at exercise4.Exercise4.tc_REQ009_001(Exercise4.java:314)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_REQ010_001">
-                  </a> <!-- tc_REQ010_001 -->
-                  <span class="method-name">tc_REQ010_001</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;post-7&apos;]/div/div[2]/div[1]/div&quot;}
-  (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;MacBook-Pro-de-Jose.local&apos;, ip: &apos;2806:10a6:10:1121:3858:c543:f834:4424%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7560dd4d7517774fe4933b56ca2647df, findElement {using=xpath, value=//*[@id=&apos;post-7&apos;]/div/div[2]/div[1]/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/sg/6x9hbzhs5kn...}, goog:chromeOptions: {debuggerAddress: localhost:55976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55976/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7560dd4d7517774fe4933b56ca2647df
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at exercise4.Exercise4.tc_REQ010_001(Exercise4.java:177)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-e_commerce_suite-class-failed -->
           <div class="suite-e_commerce_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -301,6 +210,27 @@ Session ID: 7560dd4d7517774fe4933b56ca2647df
                   <a name="tc_REQ007_003">
                   </a> <!-- tc_REQ007_003 -->
                   <span class="method-name">tc_REQ007_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_REQ008_001">
+                  </a> <!-- tc_REQ008_001 -->
+                  <span class="method-name">tc_REQ008_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_REQ009_001">
+                  </a> <!-- tc_REQ009_001 -->
+                  <span class="method-name">tc_REQ009_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_REQ010_001">
+                  </a> <!-- tc_REQ010_001 -->
+                  <span class="method-name">tc_REQ010_001</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -451,48 +381,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_REQ011_001')
 data.setCell(0, 2, 'exercise4.Exercise4')
-data.setCell(0, 3, 38085);
+data.setCell(0, 3, 31351);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_REQ010_001')
+data.setCell(1, 1, 'tc_REQ005_001')
 data.setCell(1, 2, 'exercise4.Exercise4')
-data.setCell(1, 3, 28918);
+data.setCell(1, 3, 24113);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc_REQ008_001')
+data.setCell(2, 1, 'tc_REQ010_001')
 data.setCell(2, 2, 'exercise4.Exercise4')
-data.setCell(2, 3, 28801);
+data.setCell(2, 3, 13603);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc_REQ005_001')
+data.setCell(3, 1, 'tc_REQ009_001')
 data.setCell(3, 2, 'exercise4.Exercise4')
-data.setCell(3, 3, 25182);
+data.setCell(3, 3, 12351);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc_REQ009_001')
+data.setCell(4, 1, 'tc_REQ007_003')
 data.setCell(4, 2, 'exercise4.Exercise4')
-data.setCell(4, 3, 23247);
+data.setCell(4, 3, 10249);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc_REQ007_001')
+data.setCell(5, 1, 'tc_REQ008_001')
 data.setCell(5, 2, 'exercise4.Exercise4')
-data.setCell(5, 3, 12309);
+data.setCell(5, 3, 9982);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'tc_REQ007_003')
+data.setCell(6, 1, 'tc_REQ007_001')
 data.setCell(6, 2, 'exercise4.Exercise4')
-data.setCell(6, 3, 11839);
+data.setCell(6, 3, 9027);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'tc_REQ007_002')
+data.setCell(7, 1, 'tc_REQ001_001')
 data.setCell(7, 2, 'exercise4.Exercise4')
-data.setCell(7, 3, 7635);
+data.setCell(7, 3, 7058);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'tc_REQ001_001')
+data.setCell(8, 1, 'tc_REQ007_002')
 data.setCell(8, 2, 'exercise4.Exercise4')
-data.setCell(8, 3, 6489);
+data.setCell(8, 3, 6541);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'tc_REQ003_001')
 data.setCell(9, 2, 'exercise4.Exercise4')
-data.setCell(9, 3, 3852);
+data.setCell(9, 3, 4793);
 window.suiteTableData['e_commerce_suite']= { tableData: data, tableDiv: 'times-div-e_commerce_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-e_commerce_suite">
               </div> <!-- times-div-e_commerce_suite -->
             </div> <!-- times-div -->
@@ -513,45 +443,45 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">exercise4.Exercise4</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tc_REQ010_001</span>
+                <span class="ignored-method-name">tc_REQ007_002</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ011_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ001_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ007_003</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ005_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ005_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ009_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ010_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ008_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ001_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ008_001</span>
                 <br/>
-                <span class="ignored-method-name">tc_REQ007_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ005_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ007_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ003_001</span>
-                <br/>
                 <span class="ignored-method-name">tc_REQ011_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ007_001</span>
+                <br/>
+                <span class="ignored-method-name">tc_REQ008_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ007_003</span>
                 <br/>
-                <span class="ignored-method-name">tc_REQ011_001</span>
+                <span class="ignored-method-name">tc_REQ009_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ007_002</span>
                 <br/>
-                <span class="ignored-method-name">tc_REQ007_002</span>
+                <span class="ignored-method-name">tc_REQ007_001</span>
                 <br/>
-                <span class="ignored-method-name">tc_REQ007_003</span>
+                <span class="ignored-method-name">tc_REQ010_001</span>
                 <br/>
                 <span class="ignored-method-name">tc_REQ003_001</span>
                 <br/>
-                <span class="ignored-method-name">tc_REQ009_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ001_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ009_001</span>
-                <br/>
-                <span class="ignored-method-name">tc_REQ005_001</span>
+                <span class="ignored-method-name">tc_REQ003_001</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -570,125 +500,119 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ001_001</span>
-                <span class="method-start">13870 ms</span>
+                <span class="method-start">9608 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20361 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ001_001 status=SUCCESS method=Exercise4.tc_REQ001_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">16671 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">25481 ms</span>
+                <span class="method-start">22058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ003_001</span>
-                <span class="method-start">27297 ms</span>
+                <span class="method-start">29054 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">31150 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ003_001 status=SUCCESS method=Exercise4.tc_REQ003_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">33848 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">36315 ms</span>
+                <span class="method-start">39051 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ005_001</span>
-                <span class="method-start">38240 ms</span>
+                <span class="method-start">46172 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">63424 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ005_001 status=SUCCESS method=Exercise4.tc_REQ005_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">70286 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">73664 ms</span>
+                <span class="method-start">80539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tc_REQ008_001</span>
-                <span class="method-start">75868 ms</span>
+                <span class="method-start">82589 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">104683 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ008_001 status=SUCCESS method=Exercise4.tc_REQ008_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">92571 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">109794 ms</span>
+                <span class="method-start">97761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tc_REQ009_001</span>
-                <span class="method-start">111733 ms</span>
+                <span class="method-start">104771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">134982 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ009_001 status=SUCCESS method=Exercise4.tc_REQ009_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">117122 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">140094 ms</span>
+                <span class="method-start">122311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tc_REQ010_001</span>
-                <span class="method-start">142021 ms</span>
+                <span class="method-start">129234 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">170941 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ010_001 status=SUCCESS method=Exercise4.tc_REQ010_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">142838 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">176105 ms</span>
+                <span class="method-start">148037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ011_001</span>
-                <span class="method-start">178107 ms</span>
+                <span class="method-start">155035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">216193 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ011_001 status=SUCCESS method=Exercise4.tc_REQ011_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">186387 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">226391 ms</span>
+                <span class="method-start">196592 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ007_001</span>
-                <span class="method-start">228515 ms</span>
+                <span class="method-start">198497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">240825 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ007_001 status=SUCCESS method=Exercise4.tc_REQ007_001()[pri:0, instance:exerc...)</span>
+                <span class="method-start">207525 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">246013 ms</span>
+                <span class="method-start">212733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ007_002</span>
-                <span class="method-start">247894 ms</span>
+                <span class="method-start">219696 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">255530 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ007_002 status=SUCCESS method=Exercise4.tc_REQ007_002()[pri:0, instance:exerc...)</span>
+                <span class="method-start">226237 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">260657 ms</span>
+                <span class="method-start">231438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc_REQ007_003</span>
-                <span class="method-start">262491 ms</span>
+                <span class="method-start">238167 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">274330 ms</span>
+                <span class="method-name">tearDown([TestResult name=tc_REQ007_003 status=SUCCESS method=Exercise4.tc_REQ007_003()[pri:0, instance:exerc...)</span>
+                <span class="method-start">248416 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
