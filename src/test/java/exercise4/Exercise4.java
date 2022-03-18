@@ -20,17 +20,21 @@ public class Exercise4 {
 	String user = "joseira";
 	String password = "Test_654123";
 
-	@BeforeMethod
+	@BeforeMethod(groups = { "Shop", "Cart", "Contact" })
 	public void startUp() {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	/*
+	 * user uses the search bar, in the right, to search a term related with the
+	 * name of an article
+	 */
+	@Test(groups = { "Shop" })
 	public void tc_REQ001_001() {
 		driver.get("https://practice.automationbro.com/shop/");
-		String searchTerm="converse";
+		String searchTerm = "converse";
 		WebElement searchInput = driver.findElement(By.xpath("//*[@id='woocommerce-product-search-field-0']"));
 		searchInput.sendKeys(searchTerm);
 		WebElement searchButton = driver.findElement(By.xpath("//*[@id='woocommerce_product_search-1']/form/button"));
@@ -38,11 +42,10 @@ public class Exercise4 {
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
 		String searchResult;
 		for (int i = 1; i < products; i++) {
-			searchResult = driver
-					.findElement(By.xpath("//*[@id='primary']/ul//li[" + i + "]/a/h2")).getText();
-			System.out.println("Result "+searchResult);
+			searchResult = driver.findElement(By.xpath("//*[@id='primary']/ul//li[" + i + "]/a/h2")).getText();
+			System.out.println("Result " + searchResult);
 			Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()));
-			//Thread.sleep(2000);
+			// Thread.sleep(2000);
 		}
 
 	}
@@ -50,7 +53,7 @@ public class Exercise4 {
 	/*
 	 * the user navigates in the shop pages looking the products 9 by 9
 	 */
-	@Test
+	@Test(groups = { "Shop" })
 	public void tc_REQ003_001() {
 		// enter to: https://practice.automationbro.com/shop/
 		driver.get("https://practice.automationbro.com/shop/");
@@ -63,7 +66,7 @@ public class Exercise4 {
 	 * check behavior when a registered user views a product and after looks for
 	 * recently viewed products
 	 */
-	@Test
+	@Test(groups = { "Shop" })
 	public void tc_REQ005_001() throws InterruptedException {
 		driver.get("https://practice.automationbro.com/my-account/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -100,7 +103,7 @@ public class Exercise4 {
 	}
 
 	/* check behavior when all fields are correctly entered */
-	@Test
+	@Test(groups = { "Contact" })
 	public void tc_REQ007_001() {
 		driver.get("https://practice.automationbro.com/contact/");
 		// Enter data
@@ -123,7 +126,7 @@ public class Exercise4 {
 	}
 
 	/* check behavior when name is empty */
-	@Test
+	@Test(groups = { "Contact" })
 	public void tc_REQ007_002() {
 		driver.get("https://practice.automationbro.com/contact/");
 		// Enter data
@@ -142,8 +145,87 @@ public class Exercise4 {
 		Assert.assertTrue(fieldRequired.isDisplayed());
 	}
 
+	/* check behavior when email is in wrong format */
+	@Test(groups = { "Contact" })
+	public void tc_REQ007_003() throws InterruptedException {
+		driver.get("https://practice.automationbro.com/contact/");
+		Actions action = new Actions(driver);
+		// Enter data
+		WebElement nameField = driver.findElement(By.xpath("//*[@id='evf-277-field_ys0GeZISRs-1']"));
+		WebElement emailField = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2']"));
+		WebElement phoneField = driver.findElement(By.xpath("//*[@id='evf-277-field_66FR384cge-3']"));
+		WebElement messageField = driver.findElement(By.xpath("//*[@id='evf-277-field_yhGx3FOwr2-4']"));
+		WebElement submitBtn = driver.findElement(By.xpath("//*[@id='evf-submit-277']"));
+
+		action.moveToElement(nameField).build().perform();
+		nameField.sendKeys("Jose");
+		emailField.sendKeys("jose@");
+		phoneField.sendKeys("1234567891");
+		Thread.sleep(5000);
+		WebElement errorMessage = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2-error']"));
+		messageField.sendKeys("Hola mundo");
+		Assert.assertEquals(errorMessage.getText(), "Please enter a valid email address.");
+		// click on submit
+		submitBtn.click();
+	}
+
+	/*
+	 * Validate that products are added to the cart after click on add to cart
+	 * button
+	 */
+	@Test(groups = { "Cart" })
+	public void tc_REQ008_001() throws InterruptedException {
+		// enter to: https://practice.automationbro.com/shop/
+		driver.get("https://practice.automationbro.com/shop/");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		// choose a random product to click on add to cart button
+		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
+		int getProduct = (int) (Math.random() * products + 1);
+		WebElement addBtn = driver
+				.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]//a[text()='Add to cart']"));
+		String selectedProduct = driver.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]/a/h2"))
+				.getText();
+		addBtn.click();
+		Thread.sleep(2000);
+		// click on any "view cart" link
+		WebElement cartBtn = driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i"));
+		wait.until(ExpectedConditions.visibilityOf(cartBtn));
+		cartBtn.click();
+		// verify if the item in the cart is the same previosly added
+		String nameOfProduct = driver
+				.findElement(By.xpath("//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a")).getText();
+		Assert.assertTrue(selectedProduct.equals(nameOfProduct));
+	}
+
+	/*
+	 * validate that the cart icon reflects when user adds a product to the cart
+	 */
+	@Test(groups = { "Cart" })
+	public void tc_REQ009_001() throws InterruptedException {
+		// enter to: https://practice.automationbro.com/shop/
+		driver.get("https://practice.automationbro.com/shop/");
+		// choose a random number of products to click on add to cart button
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
+		int numberOfProducts = (int) (Math.random() * 5 + 1);
+		int getProduct = 1;
+		WebElement addBtn;
+		for (int i = 0; i < numberOfProducts; i++) {
+			getProduct = (int) (Math.random() * products + 1);
+			addBtn = driver
+					.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]//a[text()='Add to cart']"));
+			addBtn.click();
+			Thread.sleep(2000);
+		}
+		// validate if the cart icon is displayed in the top of the page
+		Assert.assertTrue(driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i")).isDisplayed());
+		// validate the number of products in the cart matches with the icon number
+		Assert.assertTrue(Integer.parseInt(
+				driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/span")).getText()) == numberOfProducts);
+	}
+
 	/* validate when user removes a product from the cart */
-	@Test
+	@Test(groups = { "Cart" })
 	public void tc_REQ010_001() throws InterruptedException {
 		driver.get("https://practice.automationbro.com/shop/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -179,35 +261,11 @@ public class Exercise4 {
 		}
 	}
 
-	/* check behavior when email is in wrong format */
-	@Test
-	public void tc_REQ007_003() throws InterruptedException {
-		driver.get("https://practice.automationbro.com/contact/");
-		Actions action = new Actions(driver);
-		// Enter data
-		WebElement nameField = driver.findElement(By.xpath("//*[@id='evf-277-field_ys0GeZISRs-1']"));
-		WebElement emailField = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2']"));
-		WebElement phoneField = driver.findElement(By.xpath("//*[@id='evf-277-field_66FR384cge-3']"));
-		WebElement messageField = driver.findElement(By.xpath("//*[@id='evf-277-field_yhGx3FOwr2-4']"));
-		WebElement submitBtn = driver.findElement(By.xpath("//*[@id='evf-submit-277']"));
-
-		action.moveToElement(nameField).build().perform();
-		nameField.sendKeys("Jose");
-		emailField.sendKeys("jose@");
-		phoneField.sendKeys("1234567891");
-		Thread.sleep(5000);
-		WebElement errorMessage = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2-error']"));
-		messageField.sendKeys("Hola mundo");
-		Assert.assertEquals(errorMessage.getText(), "Please enter a valid email address.");
-		// click on submit
-		submitBtn.click();
-	}
-
 	/*
 	 * Validate a registered user is able to checkout by filling the fields with the
 	 * proper values
 	 */
-	@Test
+	@Test(groups = { "Cart" })
 	public void tc_REQ011_001() throws InterruptedException {
 		// enter to: https://practice.automationbro.com/my-account/
 		driver.get("https://practice.automationbro.com/my-account/");
@@ -286,62 +344,7 @@ public class Exercise4 {
 		Assert.assertEquals(messageString, "Thank you. Your order has been received.");
 	}
 
-	/*
-	 * validate that the cart icon reflects when user adds a product to the cart
-	 */
-	@Test
-	public void tc_REQ009_001() throws InterruptedException {
-		// enter to: https://practice.automationbro.com/shop/
-		driver.get("https://practice.automationbro.com/shop/");
-		// choose a random number of products to click on add to cart button
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
-		int numberOfProducts = (int) (Math.random() * 5 + 1);
-		int getProduct = 1;
-		WebElement addBtn;
-		for (int i = 0; i < numberOfProducts; i++) {
-			getProduct = (int) (Math.random() * products + 1);
-			addBtn = driver
-					.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]//a[text()='Add to cart']"));
-			addBtn.click();
-			Thread.sleep(2000);
-		}
-		// validate if the cart icon is displayed in the top of the page
-		Assert.assertTrue(driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i")).isDisplayed());
-		// validate the number of products in the cart matches with the icon number
-		Assert.assertTrue(Integer.parseInt(
-				driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/span")).getText()) == numberOfProducts);
-	}
-
-	/*
-	 * Validate that products are added to the cart after click on add to cart
-	 * button
-	 */
-	@Test
-	public void tc_REQ008_001() throws InterruptedException {
-		// enter to: https://practice.automationbro.com/shop/
-		driver.get("https://practice.automationbro.com/shop/");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		// choose a random product to click on add to cart button
-		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
-		int getProduct = (int) (Math.random() * products + 1);
-		WebElement addBtn = driver
-				.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]//a[text()='Add to cart']"));
-		String selectedProduct = driver.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]/a/h2"))
-				.getText();
-		addBtn.click();
-		Thread.sleep(2000);
-		// click on any "view cart" link
-		WebElement cartBtn = driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i"));
-		wait.until(ExpectedConditions.visibilityOf(cartBtn));
-		cartBtn.click();
-		// verify if the item in the cart is the same previosly added
-		String nameOfProduct = driver
-				.findElement(By.xpath("//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a")).getText();
-		Assert.assertTrue(selectedProduct.equals(nameOfProduct));
-	}
-
-	@AfterMethod
+	@AfterMethod(groups = { "Shop", "Cart", "Contact" })
 	public void tearDown() throws InterruptedException {
 		System.out.println("EXIT");
 		Thread.sleep(5000);

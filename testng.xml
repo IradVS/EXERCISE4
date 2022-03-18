@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="e-commerce suite" verbose="1">
+	<test name="Shop page requirements">
+		<groups>
+			<run>
+				<include name="Shop" />
+			</run>
+		</groups>
+		<classes>
+			<class name="exercise4.Exercise4" />
+		</classes>
+	</test>
+	<test name="Cart page requirements">
+		<groups>
+			<run>
+				<include name="Cart" />
+			</run>
+		</groups>
+		<classes>
+			<class name="exercise4.Exercise4" />
+		</classes>
+	</test>
+	<test name="Contact page requirements">
+		<groups>
+			<run>
+				<include name="Contact"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="exercise4.Exercise4" />
+		</classes>
+	</test>
+</suite> 
