@@ -85,13 +85,13 @@ you need to have selenium and testNG installed, in order to confirm if you have 
 
 and look if you have the plugins installed (if you dont, you can use eclipse market place to install it)
 in eclipse go to:
-> file >> import >> Existing maven project 
+> file >> import >> Existing maven project.
 <img width="740" alt="image" src="https://user-images.githubusercontent.com/101494543/158988247-2230ff27-20a4-4ded-85eb-2a2202946276.png">
-> click on next >> click on browse >> browse the directory and click on open
+> click on next >> click on browse >> browse the directory and click on open.
 <img width="817" alt="image" src="https://user-images.githubusercontent.com/101494543/158988434-f7df4690-b3ee-44af-b95f-913a4521726b.png">
 if everything its fine you should be able to click finish and you are ready to go.
 <img width="657" alt="image" src="https://user-images.githubusercontent.com/101494543/158988622-7838f69a-5a2f-4153-bd71-9891c4c62366.png">
-## Executing suit in Eclipse
+## Executing suit in Eclipse.
 on the root of the proyect open the file testng.xml then perform a right click and go to Run and click As TestNG suit.
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/101494543/158988941-d0ad38bb-7705-428a-ad0c-6a81a28fafeb.png">
 
