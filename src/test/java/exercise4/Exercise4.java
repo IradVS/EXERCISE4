@@ -60,7 +60,6 @@ public class Exercise4 {
 			System.out.println("Result " + searchResult);
 			Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()));
 			testLog.log(LogStatus.INFO, "Comparing the results");
-			// Thread.sleep(2000);
 		}
 		testLog.log(LogStatus.PASS, "Results are equivalent to search terms");
 	}
@@ -71,9 +70,11 @@ public class Exercise4 {
 	@Test(groups = { "Shop" })
 	public void tc_REQ003_001() {
 		testLog = report.startTest("tc_REQ003_001");
+		
 		// enter to: https://practice.automationbro.com/shop/
 		driver.get("https://practice.automationbro.com/shop/");
 		testLog.log(LogStatus.INFO, "Entering in the page.");
+		
 		// check how many products are displayed
 		testLog.log(LogStatus.INFO, "check how many products are displayed");
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
@@ -92,6 +93,7 @@ public class Exercise4 {
 		testLog.log(LogStatus.INFO, "Entering in the page.");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		Actions action = new Actions(driver);
+		
 		// login
 		WebElement userInput = driver.findElement(By.xpath("//*[@id='username']"));
 		WebElement passwordInput = driver.findElement(By.xpath("//*[@id='password']"));
@@ -100,11 +102,13 @@ public class Exercise4 {
 		passwordInput.sendKeys(password);
 		loginBtn.click();
 		testLog.log(LogStatus.INFO, "Login performed.");
+		
 		// go to shop
 		Thread.sleep(5000);
 		WebElement shopMenu = driver.findElement(By.xpath("//*[@id='menu-item-567']/a"));
 		shopMenu.click();
 		testLog.log(LogStatus.INFO, "In the shop.");
+		
 		// open a product
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
 		int getProduct = (int) (Math.random() * products + 1);
@@ -112,13 +116,14 @@ public class Exercise4 {
 		WebElement product = driver.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]/a/h2"));
 		String productSelected = product.getText();
 		product.click();
-
 		testLog.log(LogStatus.INFO, "Product opened.");
+		
 		// return to shop
 		Thread.sleep(5000);
 		shopMenu = driver.findElement(By.xpath("//*[@id='menu-item-567']/a"));
 		shopMenu.click();
 		testLog.log(LogStatus.INFO, "Returned to the shop.");
+		
 		// check if the item is displayed in recent files
 		WebElement recentProduct = driver
 				.findElement(By.xpath("//*[@id='woocommerce_recently_viewed_products-1']/ul/li[1]/a/span"));
@@ -135,6 +140,7 @@ public class Exercise4 {
 		testLog = report.startTest("tc_REQ007_001");
 		driver.get("https://practice.automationbro.com/contact/");
 		testLog.log(LogStatus.INFO, "the page is displayed.");
+		
 		// Enter data
 		WebElement nameField = driver.findElement(By.xpath("//*[@id='evf-277-field_ys0GeZISRs-1']"));
 		WebElement emailField = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2']"));
@@ -145,10 +151,12 @@ public class Exercise4 {
 		emailField.sendKeys("jose@gmail.com");
 		phoneField.sendKeys("1234567891");
 		messageField.sendKeys("Hola mundo");
-		testLog.log(LogStatus.INFO, "RData entered.");
+		testLog.log(LogStatus.INFO, "Data entered.");
+		
 		// click on submit
 		submitBtn.click();
 		testLog.log(LogStatus.INFO, "Info submited.");
+		
 		// verify message
 		WebElement submitMessage = driver.findElement(By.xpath(
 				"//*[@id='primary']/div/div/div/section[3]/div/div/div/div/div/section[2]/div/div/div[2]/div/div/div/div/div/div/div"));
@@ -175,7 +183,6 @@ public class Exercise4 {
 		messageField.sendKeys("Hola mundo");
 		submitBtn.click();
 		testLog.log(LogStatus.INFO, "Data entered");
-
 
 		WebElement fieldRequired = driver.findElement(By.xpath(
 				"//*[@id='primary']/div/div/div/section[3]/div/div/div/div/div/section[2]/div/div/div[2]/div/div/div/div/div/div/div"));
@@ -209,11 +216,11 @@ public class Exercise4 {
 		Thread.sleep(5000);
 		WebElement errorMessage = driver.findElement(By.xpath("//*[@id='evf-277-field_LbH5NxasXM-2-error']"));
 		messageField.sendKeys("Hola mundo");
+		
 		// click on submit
 		submitBtn.click();
 		Assert.assertEquals(errorMessage.getText(), "Please enter a valid email address.");
 		testLog.log(LogStatus.PASS, "Error is correctly displayed");
-
 	}
 
 	/*
@@ -223,10 +230,12 @@ public class Exercise4 {
 	@Test(groups = { "Cart" })
 	public void tc_REQ008_001() throws InterruptedException {
 		testLog = report.startTest("tc_REQ008_001");
+		
 		// enter to: https://practice.automationbro.com/shop/
 		driver.get("https://practice.automationbro.com/shop/");
 		testLog.log(LogStatus.INFO, "Page is displayed.");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		// choose a random product to click on add to cart button
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
 		int getProduct = (int) (Math.random() * products + 1);
@@ -237,11 +246,13 @@ public class Exercise4 {
 		addBtn.click();
 		Thread.sleep(2000);
 		testLog.log(LogStatus.INFO, "Random product added to the cart.");
+		
 		// click on any "view cart" link
 		WebElement cartBtn = driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i"));
 		wait.until(ExpectedConditions.visibilityOf(cartBtn));
 		cartBtn.click();
 		testLog.log(LogStatus.INFO, "Cart page is displayed.");
+		
 		// verify if the item in the cart is the same previosly added
 		String nameOfProduct = driver
 				.findElement(By.xpath("//*[@id='post-7']/div/div[2]/form/table/tbody/tr[1]/td[3]/a")).getText();
@@ -255,10 +266,12 @@ public class Exercise4 {
 	@Test(groups = { "Cart" })
 	public void tc_REQ009_001() throws InterruptedException {
 		testLog = report.startTest("tc_REQ009_001");
+		
 		// enter to: https://practice.automationbro.com/shop/
 		driver.get("https://practice.automationbro.com/shop/");
 
 		testLog.log(LogStatus.INFO, "Page displayed.");
+		
 		// choose a random number of products to click on add to cart button
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
@@ -273,9 +286,11 @@ public class Exercise4 {
 			Thread.sleep(2000);
 		}
 		testLog.log(LogStatus.INFO, "Random number of products selected.");
+		
 		// validate if the cart icon is displayed in the top of the page
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i")).isDisplayed());
 		testLog.log(LogStatus.INFO, "Cart icons is displayed.");
+		
 		// validate the number of products in the cart matches with the icon number
 		Assert.assertTrue(Integer.parseInt(
 				driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/span")).getText()) == numberOfProducts);
@@ -302,8 +317,8 @@ public class Exercise4 {
 		WebElement cartBtn = driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i"));
 		wait.until(ExpectedConditions.visibilityOf(cartBtn));
 		cartBtn.click();
-
 		testLog.log(LogStatus.INFO, "Cartpage is displayed.");
+		
 		int columns = driver.findElements(By.xpath("//*[@id='post-7']/div/div[2]/form/table/tbody//tr")).size();
 		System.out.println(columns);
 		String nameOfProduct;
@@ -321,7 +336,6 @@ public class Exercise4 {
 
 			testLog.log(LogStatus.INFO, "Product correctly deleted");
 		}
-
 		testLog.log(LogStatus.PASS, "all elements were correctly deleted");
 	}
 
@@ -336,6 +350,7 @@ public class Exercise4 {
 		driver.get("https://practice.automationbro.com/my-account/");
 		testLog.log(LogStatus.INFO, "Page is displayed");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		// login
 		WebElement userInput = driver.findElement(By.xpath("//*[@id='username']"));
 		WebElement passwordInput = driver.findElement(By.xpath("//*[@id='password']"));
@@ -344,10 +359,12 @@ public class Exercise4 {
 		passwordInput.sendKeys(password);
 		loginBtn.click();
 		testLog.log(LogStatus.INFO, "Success Login.");
+		
 		// click on shop menu
 		WebElement shopMenu = driver.findElement(By.xpath("//*[@id='menu-item-567']/a"));
 		shopMenu.click();
 		testLog.log(LogStatus.INFO, "Shop page is displayed");
+		
 		// choose a random number of products to click on add to cart button
 		int products = driver.findElements(By.xpath("//*[@id='primary']/ul//li")).size();
 		int numberOfProducts = (int) (Math.random() * 5 + 1);
@@ -358,34 +375,32 @@ public class Exercise4 {
 			addBtn = driver
 					.findElement(By.xpath("//*[@id='primary']/ul//li[" + getProduct + "]//a[text()='Add to cart']"));
 			addBtn.click();
-			// wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id='primary']/ul//li["+getProduct+"]//a[text()='View
-			// cart']"))));
 			Thread.sleep(2000);
 		}
 		testLog.log(LogStatus.INFO, "Random products added to the cart");
+		
 		// click on any "view cart" link
 		WebElement cartBtn = driver.findElement(By.xpath("//*[@id='primary-menu']/li[9]/a/i"));
 		wait.until(ExpectedConditions.visibilityOf(cartBtn));
 		cartBtn.click();
 		testLog.log(LogStatus.INFO, "Cart displayed");
-		// click on "proceed to checkout"
-
-		testLog.log(LogStatus.INFO, "Check out page displayed");
 		
+		// click on "proceed to checkout"
+		testLog.log(LogStatus.INFO, "Check out page displayed");
 		driver.findElement(By.xpath("//*[@id='post-7']/div/div[2]/div[2]/div/div/a")).click();
+		
 		// fill first name field
 		driver.findElement(By.xpath("//*[@id='billing_first_name']")).sendKeys("Phillip");
+		
 		// fill last name field
 		driver.findElement(By.xpath("//*[@id='billing_last_name']")).sendKeys("Sherman");
+		
 		// fill country/region field
 		driver.findElement(By.xpath("//*[@id='select2-billing_country-container']")).click();
-		
-
 		WebElement dropdownInput = driver.findElement(By.xpath("/html/body/span[2]/span/span[1]/input"));
 		dropdownInput.sendKeys("aus");
 		dropdownInput.sendKeys(Keys.ENTER);
 	
-
 		// fill street address field
 		driver.findElement(By.xpath("//*[@id='billing_address_1']")).sendKeys("Calle Wallaby");
 
@@ -394,7 +409,6 @@ public class Exercise4 {
 
 		// fill state field
 		driver.findElement(By.xpath("//*[@id='select2-billing_state-container']")).click();
-		
 		WebElement stateDropInput = driver.findElement(By.xpath("/html/body/span[2]/span/span[1]/input"));
 		stateDropInput.sendKeys("new");
 		stateDropInput.sendKeys(Keys.ENTER);
@@ -404,7 +418,6 @@ public class Exercise4 {
 
 		// fill phone field
 		driver.findElement(By.xpath("//*[@id='billing_phone']")).sendKeys("1234567891");
-
 		testLog.log(LogStatus.INFO, "Fields Filled Correctly");
 		
 		// click on place order
@@ -415,7 +428,6 @@ public class Exercise4 {
 		Thread.sleep(5000);
 		WebElement messageElement = driver.findElement(
 				By.xpath("//*[@id='post-8']/div/div/div/div/section/div/div/div/div/div/div/div/div/div[2]/div/p"));
-		// wait.until(ExpectedConditions.visibilityOf(messageElement));
 		String messageString = messageElement.getText();
 		Assert.assertEquals(messageString, "Thank you. Your order has been received.");
 		testLog.log(LogStatus.PASS, "Thanks Message is displayed");
@@ -435,5 +447,4 @@ public class Exercise4 {
 		Thread.sleep(5000);
 		driver.quit();
 	}
-	//
 }

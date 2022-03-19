@@ -1,159 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="30" passed="10" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T04:55:13 CST" name="e-commerce suite" finished-at="2022-03-18T04:59:27 CST" duration-ms="253675">
+  <suite started-at="2022-03-18T16:45:39 CST" name="Default suite" finished-at="2022-03-18T16:46:10 CST" duration-ms="30476">
     <groups>
-      <group name="Shop">
-        <method signature="Exercise4.tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ001_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ003_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" name="tc_REQ005_001" class="exercise4.Exercise4"/>
-      </group> <!-- Shop -->
-      <group name="Contact">
-        <method signature="Exercise4.tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_002" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9]" name="tc_REQ007_003" class="exercise4.Exercise4"/>
-      </group> <!-- Contact -->
       <group name="Cart">
-        <method signature="Exercise4.tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ008_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ009_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ010_001" class="exercise4.Exercise4"/>
-        <method signature="Exercise4.tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" name="tc_REQ011_001" class="exercise4.Exercise4"/>
+        <method signature="Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1b2abca6]" name="tc_REQ009_001" class="exercise4.Exercise4"/>
       </group> <!-- Cart -->
     </groups>
-    <test started-at="2022-03-18T04:55:13 CST" name="Shop page requirements" finished-at="2022-03-18T04:56:29 CST" duration-ms="75545">
+    <test started-at="2022-03-18T16:45:39 CST" name="Default test" finished-at="2022-03-18T16:46:10 CST" duration-ms="30476">
       <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:13 CST" name="startUp" finished-at="2022-03-18T04:55:23 CST" duration-ms="9607" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1b2abca6]" started-at="2022-03-18T16:45:39 CST" name="startUp" finished-at="2022-03-18T16:45:48 CST" duration-ms="8568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:23 CST" name="tc_REQ001_001" finished-at="2022-03-18T04:55:30 CST" duration-ms="7058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ001_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:30 CST" name="tearDown" finished-at="2022-03-18T04:55:35 CST" duration-ms="5386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ001_001 status=SUCCESS method=Exercise4.tc_REQ001_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:35 CST" name="startUp" finished-at="2022-03-18T04:55:42 CST" duration-ms="6996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:42 CST" name="tc_REQ003_001" finished-at="2022-03-18T04:55:47 CST" duration-ms="4793" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ003_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:47 CST" name="tearDown" finished-at="2022-03-18T04:55:52 CST" duration-ms="5203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ003_001 status=SUCCESS method=Exercise4.tc_REQ003_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:52 CST" name="startUp" finished-at="2022-03-18T04:55:59 CST" duration-ms="7121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:55:59 CST" name="tc_REQ005_001" finished-at="2022-03-18T04:56:23 CST" duration-ms="24113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ005_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@2ed2d9cb]" started-at="2022-03-18T04:56:23 CST" name="tearDown" finished-at="2022-03-18T04:56:29 CST" duration-ms="5202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ005_001 status=SUCCESS method=Exercise4.tc_REQ005_001()[pri:0, instance:exercise4.Exercise4@2ed2d9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- exercise4.Exercise4 -->
-    </test> <!-- Shop page requirements -->
-    <test started-at="2022-03-18T04:56:34 CST" name="Cart page requirements" finished-at="2022-03-18T04:58:25 CST" duration-ms="111038">
-      <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:34 CST" name="startUp" finished-at="2022-03-18T04:56:36 CST" duration-ms="2050" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:36 CST" name="tc_REQ008_001" finished-at="2022-03-18T04:56:46 CST" duration-ms="9982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ008_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:46 CST" name="tearDown" finished-at="2022-03-18T04:56:51 CST" duration-ms="5189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ008_001 status=SUCCESS method=Exercise4.tc_REQ008_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:51 CST" name="startUp" finished-at="2022-03-18T04:56:58 CST" duration-ms="7010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:56:58 CST" name="tc_REQ009_001" finished-at="2022-03-18T04:57:10 CST" duration-ms="12351" status="PASS">
+        <test-method signature="tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1b2abca6]" started-at="2022-03-18T16:45:48 CST" name="tc_REQ009_001" finished-at="2022-03-18T16:46:03 CST" duration-ms="15319" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at exercise4.Exercise4.tc_REQ009_001(Exercise4.java:295)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_REQ009_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:10 CST" name="tearDown" finished-at="2022-03-18T04:57:15 CST" duration-ms="5189" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1b2abca6]" started-at="2022-03-18T16:46:03 CST" name="tearDown" finished-at="2022-03-18T16:46:10 CST" duration-ms="6538" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc_REQ009_001 status=SUCCESS method=Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:15 CST" name="startUp" finished-at="2022-03-18T04:57:22 CST" duration-ms="6922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:22 CST" name="tc_REQ010_001" finished-at="2022-03-18T04:57:36 CST" duration-ms="13603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ010_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:36 CST" name="tearDown" finished-at="2022-03-18T04:57:41 CST" duration-ms="5198" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ010_001 status=SUCCESS method=Exercise4.tc_REQ010_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:41 CST" name="startUp" finished-at="2022-03-18T04:57:48 CST" duration-ms="6998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:57:48 CST" name="tc_REQ011_001" finished-at="2022-03-18T04:58:20 CST" duration-ms="31351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ011_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@1ffaf86]" started-at="2022-03-18T04:58:20 CST" name="tearDown" finished-at="2022-03-18T04:58:25 CST" duration-ms="5189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ011_001 status=SUCCESS method=Exercise4.tc_REQ011_001()[pri:0, instance:exercise4.Exercise4@1ffaf86] output={null}]]]>
+                <![CDATA[[TestResult name=tc_REQ009_001 status=FAILURE method=Exercise4.tc_REQ009_001()[pri:0, instance:exercise4.Exercise4@1b2abca6] output={null}]]]>
               </value>
             </param>
           </params>
@@ -161,67 +72,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- exercise4.Exercise4 -->
-    </test> <!-- Cart page requirements -->
-    <test started-at="2022-03-18T04:58:30 CST" name="Contact page requirements" finished-at="2022-03-18T04:59:27 CST" duration-ms="57032">
-      <class name="exercise4.Exercise4">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:30 CST" name="startUp" finished-at="2022-03-18T04:58:32 CST" duration-ms="1905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:32 CST" name="tc_REQ007_001" finished-at="2022-03-18T04:58:41 CST" duration-ms="9027" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ007_001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:41 CST" name="tearDown" finished-at="2022-03-18T04:58:46 CST" duration-ms="5206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ007_001 status=SUCCESS method=Exercise4.tc_REQ007_001()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:46 CST" name="startUp" finished-at="2022-03-18T04:58:53 CST" duration-ms="6963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:53 CST" name="tc_REQ007_002" finished-at="2022-03-18T04:58:59 CST" duration-ms="6541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ007_002 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:58:59 CST" name="tearDown" finished-at="2022-03-18T04:59:05 CST" duration-ms="5201" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ007_002 status=SUCCESS method=Exercise4.tc_REQ007_002()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:05 CST" name="startUp" finished-at="2022-03-18T04:59:11 CST" duration-ms="6729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:11 CST" name="tc_REQ007_003" finished-at="2022-03-18T04:59:22 CST" duration-ms="10249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_REQ007_003 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:exercise4.Exercise4@20140db9]" started-at="2022-03-18T04:59:22 CST" name="tearDown" finished-at="2022-03-18T04:59:27 CST" duration-ms="5207" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_REQ007_003 status=SUCCESS method=Exercise4.tc_REQ007_003()[pri:0, instance:exercise4.Exercise4@20140db9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- exercise4.Exercise4 -->
-    </test> <!-- Contact page requirements -->
-  </suite> <!-- e-commerce suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -12,9 +12,9 @@
         <methods>
           <include name="startUp"/>
           <include name="tc_REQ009_001"/>
-          <include name="tc_REQ008_001"/>
           <include name="tc_REQ010_001"/>
           <include name="tearDown"/>
+          <include name="tc_REQ011_001"/>
         </methods>
       </class> <!-- exercise4.Exercise4 -->
     </classes>
